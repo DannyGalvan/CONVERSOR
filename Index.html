@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://img.icons8.com/dotty/344/estimate.png" type="image/x-icon">
+    <title>Conversor</title>
+</head>
+<body>
+    <main>
+        <div class="container">  
+            <h1>Conversor de Números</h1> 
+            <div>
+                <div class="form-group">
+                    <label for="dato">Ingrese un Numero</label>
+                    <input class="form-control" type="text" name="dato" id="dato" placeholder="Digite un numero de cualquier base..." required>
+                    <p id="error" class="error"></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Selecciona el Tipo de Dato Ingresado</h1>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="opcionNumero"  id="hexadecimal" value="16">
+                <label class="form-check-label" for="hexadecimal">Hexadecimal</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="opcionNumero" id="decimal" value="10">
+                <label class="form-check-label" for="decimal">Decimal</label>   
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="opcionNumero"  id="octal" value="8">
+                <label class="form-check-label" for="octal">Octal</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="opcionNumero"  id="binario" value="2">
+                <label class="form-check-label" for="binario">Binario</label>      
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <button class="btn btn-primary" id="convertir" value="Convertir"><img class="imagen" src="https://img.icons8.com/dotty/344/estimate.png" alt="">convertir</button>
+                </div> 
+            </div>
+        </div>
+        <div class="container">
+            <h1>Resultados Convertidos</h1>
+            <div class="row">
+                <div class="col-lg-1 col-sm-2">
+                    <label  id="res1">Hexadecimal</label>
+                </div>
+                <div class="col-lg-11 col-sm-10">
+                    <input class="form-control" type="text"  id="result1" disabled placeholder="Aqui se mostraran sus resultados...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1 col-sm-2">
+                    <label  id="res2">Octal</label>
+                </div>
+                <div class="col-lg-11 col-sm-10">
+                    <input class="form-control" type="text" id="result2" disabled placeholder="Aqui se mostraran sus resultados...">
+                </div>
+            </div>
+           <div class="row">
+                <div class="col-lg-1 col-sm-2">
+                    <label  id="res3">Binario</label>
+                </div>
+                <div class="col-lg-11 col-sm-10">
+                    <input class="form-control" type="text" id="result3" disabled placeholder="Aqui se mostraran sus resultados...">
+                </div>
+           </div>     
+        </div>
+    </main>
+    <script src="Index.js"></script>
+</body>
+</html>

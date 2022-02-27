@@ -1,0 +1,18 @@
+main{
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+.error{
+    color:red;
+}
+.imagen{
+    height: 30px;
+    width: 30px;
+}
+#convertir:hover{
+    background-color: white;
+    color: black;
+    transition: 700ms all;
+    transform: scale(1.3);
+ }
