@@ -23,9 +23,6 @@ const res2 = document.getElementById('res2');
 const result3 = document.getElementById('result3');
 const res3 = document.getElementById('res3');
 
-const convertir = document.getElementById('convertir');
-convertir.onclick = () => CalcularResultado();
-
 function CalcularResultado() {
     if (decimal.checked) {
         if (isNaN(dato.value) || dato.value <= 0) {

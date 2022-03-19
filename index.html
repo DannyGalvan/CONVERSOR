@@ -13,8 +13,8 @@
     <main>
         <div class="container">  
             <h1>Conversor de Números</h1> 
-            <div>
-                <div class="form-group">
+            <div class="row">
+                <div class=" col-lg-11 form-group">
                     <label for="dato">Ingrese un Numero</label>
                     <input class="form-control" type="text" name="dato" id="dato" placeholder="Digite un numero de cualquier base..." required>
                     <p id="error" class="error"></p>
@@ -39,16 +39,11 @@
                 <input class="form-check-input" type="radio" name="opcionNumero"  id="binario" value="2">
                 <label class="form-check-label" for="binario">Binario</label>      
             </div>
-            <div class="row justify-content-center">
-                <div class="col-3">
-                    <button class="btn btn-primary" id="convertir" value="Convertir"><img class="imagen" src="https://img.icons8.com/dotty/344/estimate.png" alt="">convertir</button>
-                </div> 
-            </div>
         </div>
         <div class="container">
             <h1>Resultados Convertidos</h1>
             <div class="row">
-                <div class="col-lg-1 col-sm-2">
+                <div class="col-lg-11 col-sm-2">
                     <label  id="res1">Hexadecimal</label>
                 </div>
                 <div class="col-lg-11 col-sm-10">
@@ -56,7 +51,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-1 col-sm-2">
+                <div class="col-lg-11 col-sm-2">
                     <label  id="res2">Octal</label>
                 </div>
                 <div class="col-lg-11 col-sm-10">
@@ -64,13 +59,24 @@
                 </div>
             </div>
            <div class="row">
-                <div class="col-lg-1 col-sm-2">
+                <div class="col-lg-11 col-sm-2">
                     <label  id="res3">Binario</label>
                 </div>
                 <div class="col-lg-11 col-sm-10">
                     <input class="form-control" type="text" id="result3" disabled placeholder="Aqui se mostraran sus resultados...">
-                </div>
-           </div>     
+                </div>             
+           </div> 
+           <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-sm-10 mt-5 ">
+                        <h6>Nombre: Carlos Galvàn Carnè: 7590-20-16458</h6>
+                        <h6>Nombre: Gustavo Canel Carnè: 7590-22-5240</h6>
+                        <h6>Nombre: Bryan Tzoy Carnè: 7590-22-10536</h6>
+                        <h6>Nombre: Francois Gonzalez Carnè: 7590-22-8097</h6>
+                        <h6>Nombre: Jose Chin Carnè: 7590-22-4711</h6>
+                     </div>
+                </div>    
+           </div>
         </div>
     </main>
     <script src="./Conversor.js"></script>
